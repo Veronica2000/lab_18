@@ -1,6 +1,6 @@
-var angularApp = angular.module('angularApp', ['ui.router']);
+var app = angular.module('angularApp', ['ui.router']);
 
-	angularApp.config(function($stateProvider, $urlRouterProvider) {
+	app.config(function($stateProvider, $urlRouterProvider) {
     
     //$urlRouterProvider.otherwise('/home');
     
@@ -9,12 +9,14 @@ var angularApp = angular.module('angularApp', ['ui.router']);
         // HOME STATES AND NESTED VIEWS ========================================
         .state('pal', {
             url: '/',
-            templateUrl: 'partial-pal.html'
+            templateUrl: 'partial-pal.html',
+            controller: 'palController'
         })
 
           .state('view', {
             url: '/view',
-            templateUrl: 'partial-view.html'
+            templateUrl: 'partial-view.html',
+            controller: 'viewController'
         })
         
 });
