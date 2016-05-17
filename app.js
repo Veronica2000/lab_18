@@ -20,15 +20,14 @@ var app = angular.module('angularApp', ['ui.router']);
         })
       
 
-             // HOME STATES AND NESTED VIEWS ========================================
-        .state('randomQuoteInput', {
-            url: '/randomQuoteInput',
+        .state('randomquoteinput', {
+            url: '/randomquoteinput',
             templateUrl: 'partial-randomquoteinput.html',
             controller: 'randomQuoteInputController'
         })
 
-          .state('randomQuoteView', {
-            url: '/randomQuoteView',
+          .state('randomquoteview', {
+            url: '/randomquoteview',
             templateUrl: 'partial-randomquoteview.html',
             controller: 'randomQuoteViewController'
         })  

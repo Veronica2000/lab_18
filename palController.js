@@ -3,15 +3,24 @@ var app = angular.module("angularApp");
 app.controller("palController", function($scope, angularService, $location){
 
 
-	$scope.getWord = function(){
-		var word = ""
+	$scope.getWord = function(word){
 		
-		var wordReverse = word.toLowerCase().split('').reverse().join('');
+		var display = "";
+		var newWord = word;
+		
+		var wordReverse = newWord.toLowerCase().split('').reverse()
+		.join('');
 
-		console.log(wordReverse);
-	}
-	// 	angularService.wordkey($scope.word);
-	// 	$location.path('/view');
-	// };
+			if (newWord === wordReverse){
+		 	display = newWord + " is a palindrome"
+			 	}
+
+			else if (newWord !== wordReverse){
+			display = newWord + " is not a palindrome"
+			}
+
+		angularService.saveData(display);
+		$location.path('/view');
+	};
 
 });

@@ -5,20 +5,14 @@ var app = angular.module("angularApp");
 		
 		return {
 			
-			saveData: function(wordObject){
-
-				word = wordObject;
-				//console.log(words);
+			saveData: function(display){
+				word = display;
 			},
 			
 			wordkey: function(){
 				return word
-			}
+			},
 
-			// getData: function(){
-			// 	return {
-			// 		string: words,
-			// };
 		};
 		
 	});

@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.inner-quat {
+  color: blue;
+  text-align: left;
+}
+
+.quat {
+  margin: 1% auto auto auto;
+  width: 450px;
+  padding: 40px 50px;
+  background: white;
+  border-radius: 2px;
+  font-weight: bold;
+  color:blue;
+}
+
+.quat-section {
+  display: inline-block;
+}
+
+.quat-sign{
+   float: left;
+  > i {
+      font-size: 24px;
+      margin-right: 14px;
+      margin-top: 11px;
+      height:23px;    
+  }
+}
+
+.quat-text{
+  float:left;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.share {
+  margin-top: 45px !important;
+  margin-left: 14px !important;
+  margin: 2px;
+  width: 34px;
+  height: 34px;
+  padding: 2%;
+  border-radius: 4px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  > i{
+    padding: 2px 8px 2px 6px;  
+  }
+}
+
+.new-quat {
+  margin-top: 45px !important;
+  margin: 2px;
+  padding: 2%;
+  border-radius: 4px;
+  border-style: none;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  float: right;
+  padding: 0px;
+  text-align: center;
+  font-size: 22px;
+  margin-right: 5px;
+  height: 50px;
+  width: 180px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.share-block {
+  display: inline-block;
+  width: 100%
+}
+// Animations
+.fade.ng-enter {
+  transition:0.5s linear all;
+  color:black;
+  opacity:1;
+}
+
+.fade.ng-enter.ng-enter-active {
+  color:black;
+  opacity:1;
+}
+
+.author{
+  float:right;
+  margin: 14px auto auto auto;
+  font-size: 23px;
+  font-family : Monospace;
+}
+
+.footer {
+  color:white;
+  margin : 1% auto auto auto;
+  width:234px;
+  > a{
+    color:white;
+  }
+}
